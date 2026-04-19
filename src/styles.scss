@@ -1,1 +1,20 @@
+@import 'reset';
+@import 'theme';
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  --color-bg-primary: var(--theme-bg-primary);
+  --color-bg-secondary: var(--theme-bg-secondary);
+  --color-text-primary: var(--theme-text-primary);
+  --color-text-secondary: var(--theme-text-secondary);
+  --color-accent: var(--theme-accent);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* You can add global styles to this file, and also import other style files */

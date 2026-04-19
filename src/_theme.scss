@@ -1,0 +1,15 @@
+:root {
+  --theme-bg-primary: #ffffff;
+  --theme-bg-secondary: #f3f4f6;
+  --theme-text-primary: #111827;
+  --theme-text-secondary: #4b5563;
+  --theme-accent: #2563eb; /* blue-600 */
+}
+
+:root.dark {
+  --theme-bg-primary: #0a0a0a;
+  --theme-bg-secondary: #18181b;
+  --theme-text-primary: #f9fafb;
+  --theme-text-secondary: #d1d5db;
+  --theme-accent: #3b82f6; /* blue-500 */
+}

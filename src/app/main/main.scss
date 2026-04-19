@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  position: relative;
+  background-color: theme('colors.white');
+  transition: background-color 0.5s ease-in-out;
+  overflow-x: hidden;
+}
+
+:host-context(.dark) {
+  background-color: #050505;
+  /* Deep dark background */
+}
+
+.bg-canvas {
+  position: fixed;
+  /* Must be fixed so scroll doesn't affect it */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  /* Ensures canvas stays behind everything else */
+  pointer-events: none;
+  /* Let clicks pass through it */
+}

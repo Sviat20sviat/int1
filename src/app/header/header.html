@@ -1,0 +1,85 @@
+<header
+  class="sticky top-0 left-0 w-full z-50 transition-colors duration-500 bg-bg-primary/80 backdrop-blur-md border-b border-gray-200 dark:border-white/10 main-header">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 header-cont">
+    <div class="flex">
+      <div class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link" data-section="home" [class.selected]="selectedSection() === 'home'"
+        (click)="selectSection('home')">
+        <i class="fas fa-home"></i>
+        <span class="nav-text">Home</span>
+      </a>
+      <a href="#about" class="nav-link" data-section="about" [class.selected]="selectedSection() === 'about'"
+        (click)="selectSection('about')">
+        <i class="fas fa-user"></i>
+        <span class="nav-text">About</span>
+      </a>
+      <a href="#skills" class="nav-link" data-section="skills" [class.selected]="selectedSection() === 'skills'"
+        (click)="selectSection('skills')">
+        <i class="fas fa-code"></i>
+        <span class="nav-text">Skills</span>
+      </a>
+      <a href="#experience" class="nav-link" data-section="experience"
+        [class.selected]="selectedSection() === 'experience'" (click)="selectSection('experience')">
+        <i class="fas fa-briefcase"></i>
+        <span class="nav-text">Experience</span>
+      </a>
+      <a href="#projects" class="nav-link" data-section="projects" [class.selected]="selectedSection() === 'projects'"
+        (click)="selectSection('projects')">
+        <i class="fas fa-rocket"></i>
+        <span class="nav-text">Projects</span>
+      </a>
+      <a href="#contact" class="nav-link" data-section="contact" [class.selected]="selectedSection() === 'contact'"
+        (click)="selectSection('contact')">
+        <i class="fas fa-envelope"></i>
+        <span class="nav-text">Contact</span>
+      </a>
+    </div>
+    <div class="flex relative ">
+
+      <div class="flex-1 flex justify-end">
+        <label>
+          <input type="checkbox" checked (click)="themeService.toggleTheme()">
+          <div class="planet">
+          </div>
+          <div class="elements">
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+            <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="250" cy="250" r="200" />
+            </svg>
+          </div>
+        </label>
+      </div>
+      <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
+        <option value="profile">Profile</option>
+        <option value="word">Word</option>
+        <option value="hashtag">Hashtag</option>
+      </select>
+    </div>
+  </div>
+</header>
