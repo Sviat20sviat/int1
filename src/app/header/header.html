@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="nav-menu" id="navMenu">
-      <a href="#home" class="nav-link" [class.selected]="selectedSection() === 'home'" (click)="selectSection('home', $event)">
+      <a href="#home" class="nav-link" [class.selected]="selectedSection() === 'home'"
+        (click)="selectSection('home', $event)">
         <i class="fas fa-home"></i>
         <span class="nav-text">Home</span>
       </a>
@@ -39,7 +40,7 @@
         <span class="nav-text">Contact</span>
       </a>
     </div>
-    <div class="flex relative ">
+    <div class="flex relative items-center">
 
       <div class="flex-1 flex justify-end">
         <label>
@@ -74,11 +75,8 @@
           </div>
         </label>
       </div>
-      <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
-        <option value="profile">Profile</option>
-        <option value="word">Word</option>
-        <option value="hashtag">Hashtag</option>
-      </select>
+      <app-custom-select [options]="availableLanguages" [formControl]="languageControl" placeholder="Language">
+      </app-custom-select>
     </div>
   </div>
 </header>

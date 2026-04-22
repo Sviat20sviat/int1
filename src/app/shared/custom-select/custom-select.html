@@ -1,0 +1,16 @@
+<div class="custom-select-container" [class.disabled]="disabled" [class.open]="isOpen">
+  <div class="custom-select-trigger" (click)="toggleOpen()" tabindex="0">
+    <span class="selected-text">{{ selectedLabel }}</span>
+    <span class="chevron"></span>
+  </div>
+
+  <div class="custom-select-dropdown" *ngIf="isOpen">
+    <div 
+      class="custom-option" 
+      *ngFor="let option of options" 
+      [class.selected]="option[bindValue] === value"
+      (click)="selectOption(option, $event)">
+      {{ option[bindLabel] }}
+    </div>
+  </div>
+</div>
