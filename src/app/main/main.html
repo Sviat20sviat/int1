@@ -10,33 +10,33 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-greeting">
-                    <span class="greeting-text">Hello, I'm</span>
+                    <span class="greeting-text">{{ 'HERO.GREETING' | translate }}</span>
                     <span class="greeting-cursor">|</span>
                 </div>
 
                 <h1 class="hero-name" id="heroName">
                     <span class="name-prefix">const</span>
                     <span class="name-operator">=</span>
-                    <span class="name-value">Developer</span>
+                    <span class="name-value">{{ 'HERO.DEVELOPER' | translate }}</span>
                     <span class="name-suffix">;</span>
                 </h1>
 
                 <div class="hero-title">
                     <span class="title-prefix">//</span>
-                    <span class="title-text">Full Stack Developer</span>
+                    <span class="title-text">{{ 'HERO.ROLE' | translate }}</span>
                 </div>
 
                 <p class="hero-description">
-                    Passionate developer creating exceptional digital experiences with modern technologies.
+                    {{ 'HERO.DESCRIPTION' | translate }}
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
-                        <span>Get In Touch</span>
+                        <span>{{ 'HERO.CONTACT_BTN' | translate }}</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                     <a href="#projects" class="btn btn-secondary">
-                        <span>View Projects</span>
+                        <span>{{ 'HERO.PROJECTS_BTN' | translate }}</span>
                         <i class="fas fa-code"></i>
                     </a>
                 </div>
@@ -74,21 +74,21 @@
                         <i class="fab fa-react"></i>
                         <div class="badge-content">
                             <span class="badge-title">Angular</span>
-                            <span class="badge-libs">RxJs, SPA, Hooks</span>
+                            <span class="badge-libs">{{ 'BADGES.ANGULAR' | translate }}</span>
                         </div>
                     </div>
                     <div class="floating-badge badge-2">
                         <i class="fab fa-node-js"></i>
                         <div class="badge-content">
                             <span class="badge-title">Node.js</span>
-                            <span class="badge-libs">NestJs, Socket.io, PostgreSQL</span>
+                            <span class="badge-libs">{{ 'BADGES.NODEJS' | translate }}</span>
                         </div>
                     </div>
                     <div class="floating-badge badge-3">
                         <i class="fab fa-js"></i>
                         <div class="badge-content">
                             <span class="badge-title">JavaScript</span>
-                            <span class="badge-libs">ES6+, TypeScript, jQuery</span>
+                            <span class="badge-libs">{{ 'BADGES.JAVASCRIPT' | translate }}</span>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
             <div class="scroll-mouse">
                 <div class="scroll-wheel"></div>
             </div>
-            <span class="scroll-text">Scroll Down</span>
+            <span class="scroll-text">{{ 'HERO.SCROLL' | translate }}</span>
         </div>
     </section>
 
@@ -109,7 +109,7 @@
                 <span class="section-number">01</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text">About Me</span>
+                    <span class="title-text">{{ 'ABOUT.TITLE' | translate }}</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -119,27 +119,22 @@
                 <div class="about-text-wrapper">
                     <div class="about-intro">
                         <p class="about-text">
-                            I'm a Full Stack Developer with over 5 years of experience in building modern web
-                            applications and mobile solutions. I specialize in JavaScript technologies, Angualr,
-                            Node.js,
-                            and creating beautiful user interfaces.
+                            {{ 'ABOUT.DESCRIPTION' | translate }}
                         </p>
                     </div>
 
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-number">10</div>
-                            <div class="stat-label">Projects</div>
+                            <div class="stat-label">{{ 'ABOUT.STATS.PROJECTS' | translate }}</div>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">5</div>
-                            <div class="stat-label">Years
-                                Experience</div>
+                            <div class="stat-label">{{ 'ABOUT.STATS.EXPERIENCE_YEARS' | translate }}</div>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">10</div>
-                            <div class="stat-label">Happy Clients
-                            </div>
+                            <div class="stat-label">{{ 'ABOUT.STATS.CLIENTS' | translate }}</div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +151,7 @@
                             <div class="code-line indent">
                                 <span class="code-property">name</span>
                                 <span class="code-operator">:</span>
-                                <span class="code-string">'Developer'</span>
+                                <span class="code-string">{{ 'ABOUT.CODE.NAME' | translate }}</span>
                                 <span class="code-comma">,</span>
                             </div>
                             <div class="code-line indent">
@@ -174,7 +169,7 @@
                             <div class="code-line indent">
                                 <span class="code-property">passion</span>
                                 <span class="code-operator">:</span>
-                                <span class="code-string">'Coding'</span>
+                                <span class="code-string">{{ 'ABOUT.CODE.PASSION' | translate }}</span>
                             </div>
                             <div class="code-line">
                                 <span class="code-brace">"{{ '}' }}"</span>
@@ -193,7 +188,7 @@
                 <span class="section-number">02</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text">Skills</span>
+                    <span class="title-text">{{ 'SKILLS.TITLE' | translate }}</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -201,7 +196,7 @@
 
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
+                    <h3 class="category-title">{{ 'SKILLS.FRONTEND' | translate }}</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -243,7 +238,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
+                    <h3 class="category-title">{{ 'SKILLS.BACKEND' | translate }}</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -285,8 +280,7 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title">Tools &
-                        Others</h3>
+                    <h3 class="category-title">{{ 'SKILLS.TOOLS' | translate }}</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
@@ -336,7 +330,7 @@
                 <span class="section-number">03</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text">Experience</span>
+                    <span class="title-text">{{ 'EXPERIENCE.TITLE' | translate }}</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -348,33 +342,28 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div class="timeline-year">2021 - 2025</div>
-                            <div class="timeline-badge">Current</div>
+                            <div class="timeline-badge">{{ 'EXPERIENCE.CURRENT_BADGE' | translate }}</div>
                         </div>
-                        <h3 class="timeline-title">Middle Full Stack
-                            Developer</h3>
+                        <h3 class="timeline-title">{{ 'EXPERIENCE.JOB1.ROLE' | translate }}</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Tello Technologies
+                            {{ 'EXPERIENCE.JOB1.COMPANY' | translate }}
                         </div>
                         <p class="timeline-description">
-                            Deveping dashboard for the huge Push-to-Talk SaaS product
-                            using Angular 8-19,
-                            Material, eCharts, Google Maps, state managment,
-                            websocket realtime updating, own realtime chat,
-                            own realtime voice-video messaging.
+                            {{ 'EXPERIENCE.JOB1.DESC' | translate }}
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Led team of frontend developers</span>
+                                <span>{{ 'EXPERIENCE.JOB1.ACH1' | translate }}</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Improved performance by 60%</span>
+                                <span>{{ 'EXPERIENCE.JOB1.ACH2' | translate }}</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Build stable and scalable architecture</span>
+                                <span>{{ 'EXPERIENCE.JOB1.ACH3' | translate }}</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
@@ -394,26 +383,22 @@
                             <div class="timeline-year">2024 - 2025</div>
                         </div>
                         <h3 class="timeline-title">
-                            Senior Frontend Developer - Middle Backend Developer</h3>
+                            {{ 'EXPERIENCE.JOB2.ROLE' | translate }}</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Transport Logistic Company
+                            {{ 'EXPERIENCE.JOB2.COMPANY' | translate }}
                         </div>
                         <p class="timeline-description">
-                            Transport Logistic Company app development.
-                            SaaS-startup with client and admin sides, management
-                            of drivers, vehicles, orders, routes, payments, notifications,
-                            reports, analytics, etc.
-
+                            {{ 'EXPERIENCE.JOB2.DESC' | translate }}
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Developed frontend and backend sides</span>
+                                <span>{{ 'EXPERIENCE.JOB2.ACH1' | translate }}</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Reduced load time by 50%</span>
+                                <span>{{ 'EXPERIENCE.JOB2.ACH2' | translate }}</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
@@ -432,26 +417,22 @@
                             <div class="timeline-year">2022 - 2024</div>
                         </div>
                         <h3 class="timeline-title">
-                            Middle Frontend Developer</h3>
+                            {{ 'EXPERIENCE.JOB3.ROLE' | translate }}</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            ePattern Digital
+                            {{ 'EXPERIENCE.JOB3.COMPANY' | translate }}
                         </div>
                         <p class="timeline-description">
-                            Oil calculation tool. Processing of many drills and
-                            year of oil pumping. Angular 15-17, plotlyJs charts.
-                            Multicharts, saving presets to local file\ server, load
-                            from local doc calculation, comprasion.
-
+                            {{ 'EXPERIENCE.JOB3.DESC' | translate }}
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Improove optimization</span>
+                                <span>{{ 'EXPERIENCE.JOB3.ACH1' | translate }}</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Reduced load time by 50%</span>
+                                <span>{{ 'EXPERIENCE.JOB3.ACH2' | translate }}</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
@@ -470,25 +451,22 @@
                         <div class="timeline-header">
                             <div class="timeline-year">2021 - 2022</div>
                         </div>
-                        <h3 class="timeline-title">Junior
-                            Developer</h3>
+                        <h3 class="timeline-title">{{ 'EXPERIENCE.JOB4.ROLE' | translate }}</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Yoga Marga app
+                            {{ 'EXPERIENCE.JOB4.COMPANY' | translate }}
                         </div>
                         <p class="timeline-description">
-                            Fullstack PWA SPA Practices and exersices
-                            desktop/mobile app on Angular 12 and Firebase.
-                            Registration\autorization with Firebase
+                            {{ 'EXPERIENCE.JOB4.DESC' | translate }}
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Building mobile adaptive and offline-usable PWA app</span>
+                                <span>{{ 'EXPERIENCE.JOB4.ACH1' | translate }}</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span>Learned modern frameworks</span>
+                                <span>{{ 'EXPERIENCE.JOB4.ACH2' | translate }}</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
@@ -510,7 +488,7 @@
                 <span class="section-number">04</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text">Projects</span>
+                    <span class="title-text">{{ 'PROJECTS.TITLE' | translate }}</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -534,9 +512,9 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">{{ 'PROJECTS.PROJ1.TITLE' | translate }}</h3>
                         <p class="project-description">
-                            A complete e-commerce platform with payment integration and advanced inventory management.
+                            {{ 'PROJECTS.PROJ1.DESC' | translate }}
                         </p>
                         <div class="project-tags">
                             <span class="tag">React</span>
@@ -564,9 +542,9 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">
-                            Task Management App</h3>
+                            {{ 'PROJECTS.PROJ2.TITLE' | translate }}</h3>
                         <p class="project-description">
-                            A web application for task management with real-time synchronization and modern design.
+                            {{ 'PROJECTS.PROJ2.DESC' | translate }}
                         </p>
                         <div class="project-tags">
                             <span class="tag">React</span>
@@ -593,10 +571,10 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Blog Platform
+                        <h3 class="project-title">{{ 'PROJECTS.PROJ3.TITLE' | translate }}
                         </h3>
                         <p class="project-description">
-                            A modern blog platform with CMS features and beautiful UI design.
+                            {{ 'PROJECTS.PROJ3.DESC' | translate }}
                         </p>
                         <div class="project-tags">
                             <span class="tag">Next.js</span>
@@ -615,7 +593,7 @@
                 <span class="section-number">05</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text">Contact</span>
+                    <span class="title-text">{{ 'CONTACT.TITLE' | translate }}</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -628,7 +606,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label">Email</h4>
+                            <h4 class="contact-label">{{ 'CONTACT.EMAIL' | translate }}</h4>
                             <a href="mailto:sdvorskij8@gmail.com" class="contact-value">sdvorskij8@gmail.com</a>
                         </div>
                     </div>
@@ -638,7 +616,7 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label">Phone</h4>
+                            <h4 class="contact-label">{{ 'CONTACT.PHONE' | translate }}</h4>
                             <a href="tel:+966501234567" class="contact-value">+47 405-830-57</a>
                         </div>
                     </div>
@@ -648,7 +626,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label">Location</h4>
+                            <h4 class="contact-label">{{ 'CONTACT.LOCATION' | translate }}</h4>
                             <span class="contact-value">Øygarden, Norway</span>
                         </div>
                     </div>
@@ -656,19 +634,19 @@
 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Name" required>
+                        <input type="text" class="form-input" [placeholder]="'CONTACT.FORM.NAME' | translate" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-input" placeholder="Email" required>
+                        <input type="email" class="form-input" [placeholder]="'CONTACT.FORM.EMAIL' | translate" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Subject" required>
+                        <input type="text" class="form-input" [placeholder]="'CONTACT.FORM.SUBJECT' | translate" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-input form-textarea" rows="5" placeholder="Message" required></textarea>
+                        <textarea class="form-input form-textarea" rows="5" [placeholder]="'CONTACT.FORM.MESSAGE' | translate" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit">
-                        <span>Send Message</span>
+                        <span>{{ 'CONTACT.FORM.SEND' | translate }}</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>

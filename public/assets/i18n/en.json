@@ -1,0 +1,104 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SKILLS": "Skills",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "GREETING": "Hello, I'm",
+    "DEVELOPER": "Developer",
+    "ROLE": "Full Stack Developer",
+    "DESCRIPTION": "Passionate developer creating exceptional digital experiences with modern technologies.",
+    "CONTACT_BTN": "Get In Touch",
+    "PROJECTS_BTN": "View Projects",
+    "SCROLL": "Scroll Down"
+  },
+  "BADGES": {
+    "ANGULAR": "RxJs, SPA, Hooks",
+    "NODEJS": "NestJs, Socket.io, PostgreSQL",
+    "JAVASCRIPT": "ES6+, TypeScript, jQuery"
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "DESCRIPTION": "I'm a Full Stack Developer with over 5 years of experience in building modern web applications and mobile solutions. I specialize in JavaScript technologies, Angular, Node.js, and creating beautiful user interfaces.",
+    "CODE": {
+      "NAME": "'Developer'",
+      "PASSION": "'Coding'"
+    },
+    "STATS": {
+      "PROJECTS": "Projects",
+      "EXPERIENCE_YEARS": "Years Experience",
+      "CLIENTS": "Happy Clients"
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "TOOLS": "Tools & Others"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience",
+    "CURRENT_BADGE": "Current",
+    "JOB1": {
+      "ROLE": "Middle Full Stack Developer",
+      "COMPANY": "Tello Technologies",
+      "DESC": "Deveping dashboard for the huge Push-to-Talk SaaS product using Angular 8-19, Material, eCharts, Google Maps, state managment, websocket realtime updating, own realtime chat, own realtime voice-video messaging.",
+      "ACH1": "Led team of frontend developers",
+      "ACH2": "Improved performance by 60%",
+      "ACH3": "Build stable and scalable architecture"
+    },
+    "JOB2": {
+      "ROLE": "Senior Frontend Developer - Middle Backend Developer",
+      "COMPANY": "Transport Logistic Company",
+      "DESC": "Transport Logistic Company app development. SaaS-startup with client and admin sides, management of drivers, vehicles, orders, routes, payments, notifications, reports, analytics, etc.",
+      "ACH1": "Developed frontend and backend sides",
+      "ACH2": "Reduced load time by 50%"
+    },
+    "JOB3": {
+      "ROLE": "Middle Frontend Developer",
+      "COMPANY": "ePattern Digital",
+      "DESC": "Oil calculation tool. Processing of many drills and year of oil pumping. Angular 15-17, plotlyJs charts. Multicharts, saving presets to local file\\ server, load from local doc calculation, comprasion.",
+      "ACH1": "Improove optimization",
+      "ACH2": "Reduced load time by 50%"
+    },
+    "JOB4": {
+      "ROLE": "Junior Developer",
+      "COMPANY": "Yoga Marga app",
+      "DESC": "Fullstack PWA SPA Practices and exersices desktop/mobile app on Angular 12 and Firebase. Registration/autorization with Firebase",
+      "ACH1": "Building mobile adaptive and offline-usable PWA app",
+      "ACH2": "Learned modern frameworks"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Featured Projects",
+    "PROJ1": {
+      "TITLE": "E-Commerce Platform",
+      "DESC": "A complete e-commerce platform with payment integration and advanced inventory management."
+    },
+    "PROJ2": {
+      "TITLE": "Task Management App",
+      "DESC": "A web application for task management with real-time synchronization and modern design."
+    },
+    "PROJ3": {
+      "TITLE": "Blog Platform",
+      "DESC": "A modern blog platform with CMS features and beautiful UI design."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Get In Touch",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "LOCATION": "Location",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "SUBJECT": "Subject",
+      "MESSAGE": "Message",
+      "SEND": "Send Message"
+    }
+  }
+}

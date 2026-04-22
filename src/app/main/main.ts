@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, HostListener, Inject, PLATFORM_ID, OnDestroy, inject } from '@angular/core';
 import { isPlatformBrowser, CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 import { CanvasAnimationService } from './canvas-animation.service';
 import { ThemeService } from '../theme.service';
 import { HeaderComponent } from "../header/header";
@@ -7,7 +8,7 @@ import { HeaderComponent } from "../header/header";
 @Component({
   selector: 'main',
   standalone: true,
-  imports: [CommonModule, HeaderComponent],
+  imports: [CommonModule, HeaderComponent, TranslateModule],
   templateUrl: './main.html',
   styleUrl: './main.scss',
 })

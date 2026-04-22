@@ -12,32 +12,32 @@
       <a href="#home" class="nav-link" [class.selected]="selectedSection() === 'home'"
         (click)="selectSection('home', $event)">
         <i class="fas fa-home"></i>
-        <span class="nav-text">Home</span>
+        <span class="nav-text">{{ 'HEADER.HOME' | translate }}</span>
       </a>
       <a href="#about" class="nav-link" [class.selected]="selectedSection() === 'about'"
         (click)="selectSection('about', $event)">
         <i class="fas fa-user"></i>
-        <span class="nav-text">About</span>
+        <span class="nav-text">{{ 'HEADER.ABOUT' | translate }}</span>
       </a>
       <a href="#skills" class="nav-link" [class.selected]="selectedSection() === 'skills'"
         (click)="selectSection('skills', $event)">
         <i class="fas fa-code"></i>
-        <span class="nav-text">Skills</span>
+        <span class="nav-text">{{ 'HEADER.SKILLS' | translate }}</span>
       </a>
       <a href="#experience" class="nav-link" [class.selected]="selectedSection() === 'experience'"
         (click)="selectSection('experience', $event)">
         <i class="fas fa-briefcase"></i>
-        <span class="nav-text">Experience</span>
+        <span class="nav-text">{{ 'HEADER.EXPERIENCE' | translate }}</span>
       </a>
       <a href="#projects" class="nav-link" [class.selected]="selectedSection() === 'projects'"
         (click)="selectSection('projects', $event)">
         <i class="fas fa-rocket"></i>
-        <span class="nav-text">Projects</span>
+        <span class="nav-text">{{ 'HEADER.PROJECTS' | translate }}</span>
       </a>
       <a href="#contact" class="nav-link" [class.selected]="selectedSection() === 'contact'"
         (click)="selectSection('contact', $event)">
         <i class="fas fa-envelope"></i>
-        <span class="nav-text">Contact</span>
+        <span class="nav-text">{{ 'HEADER.CONTACT' | translate }}</span>
       </a>
     </div>
     <div class="flex relative items-center">

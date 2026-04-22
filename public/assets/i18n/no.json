@@ -1,0 +1,104 @@
+{
+  "HEADER": {
+    "HOME": "Hjem",
+    "ABOUT": "Om meg",
+    "SKILLS": "Ferdigheter",
+    "EXPERIENCE": "Erfaring",
+    "PROJECTS": "Prosjekter",
+    "CONTACT": "Kontakt"
+  },
+  "HERO": {
+    "GREETING": "Hei, jeg er",
+    "DEVELOPER": "Utvikler",
+    "ROLE": "Full Stack Utvikler",
+    "DESCRIPTION": "Lidenskapelig utvikler som skaper enestående digitale opplevelser med moderne teknologi.",
+    "CONTACT_BTN": "Ta Kontakt",
+    "PROJECTS_BTN": "Se Prosjekter",
+    "SCROLL": "Skroll Ned"
+  },
+  "BADGES": {
+    "ANGULAR": "RxJs, SPA, Hooks",
+    "NODEJS": "NestJs, Socket.io, PostgreSQL",
+    "JAVASCRIPT": "ES6+, TypeScript, jQuery"
+  },
+  "ABOUT": {
+    "TITLE": "Om Meg",
+    "DESCRIPTION": "Jeg er en Full Stack Utvikler med over 5 års erfaring i å bygge moderne webapplikasjoner og mobilløsninger. Jeg spesialiserer meg i JavaScript-teknologier, Angular, Node.js, og å skape vakre brukergrensesnitt.",
+    "CODE": {
+      "NAME": "'Utvikler'",
+      "PASSION": "'Programmering'"
+    },
+    "STATS": {
+      "PROJECTS": "Prosjekter",
+      "EXPERIENCE_YEARS": "Års Erfaring",
+      "CLIENTS": "Fornøyde Kunder"
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Ferdigheter",
+    "FRONTEND": "Frontend",
+    "BACKEND": "Backend",
+    "TOOLS": "Verktøy & Annet"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Erfaring",
+    "CURRENT_BADGE": "Nåværende",
+    "JOB1": {
+      "ROLE": "Middle Full Stack Utvikler",
+      "COMPANY": "Tello Technologies",
+      "DESC": "Utvikler dashboard for et enormt Push-to-Talk SaaS-produkt med Angular 8-19, Material, eCharts, Google Maps, state management, websocket sanntidsoppdatering, egen sanntidschat, egen video/tale-melding.",
+      "ACH1": "Ledet et team av frontend-utviklere",
+      "ACH2": "Forbedret ytelse med 60%",
+      "ACH3": "Bygget stabil og skalerbar arkitektur"
+    },
+    "JOB2": {
+      "ROLE": "Senior Frontend Utvikler - Middle Backend Utvikler",
+      "COMPANY": "Transport Logistic Company",
+      "DESC": "Utvikling av logistikkapplikasjon. SaaS-startup med klient- og adminsider, oppfølging av sjåfører, kjøretøy, ruter, betalinger, varslinger, rapporter, analyse, etc.",
+      "ACH1": "Utviklet frontend og backend",
+      "ACH2": "Reduserte lastetiden med 50%"
+    },
+    "JOB3": {
+      "ROLE": "Middle Frontend Utvikler",
+      "COMPANY": "ePattern Digital",
+      "DESC": "Verktøy for oljekalkulering. Behandling av flere borerigger og års oljepumping. Angular 15-17, plotlyJs grafer. Fler-grafer, lokal lagring av innstillinger, sammenligning.",
+      "ACH1": "Forbedret optimalisering",
+      "ACH2": "Reduserte lastetiden med 50%"
+    },
+    "JOB4": {
+      "ROLE": "Junior Utvikler",
+      "COMPANY": "Yoga Marga app",
+      "DESC": "Fullstack PWA SPA desktop/mobilapplikasjon med Angular 12 og Firebase. Registrering og pålogging via Firebase.",
+      "ACH1": "Bygget mobiladaptiv PWA-applikasjon i offline modus",
+      "ACH2": "Lærte moderne rammeverk"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Fremhevede Prosjekter",
+    "PROJ1": {
+      "TITLE": "E-Handelsplattform",
+      "DESC": "En komplett e-handelsplattform med betalingsintegrasjon og avansert lagerstyring."
+    },
+    "PROJ2": {
+      "TITLE": "Task Management App",
+      "DESC": "En webapplikasjon for oppgavehåndtering med sanntidssynkronisering og moderne design."
+    },
+    "PROJ3": {
+      "TITLE": "Bloggplattform",
+      "DESC": "En moderne bloggplattform med CMS-funksjoner og vakkert UI-design."
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Ta Kontakt",
+    "EMAIL": "E-post",
+    "PHONE": "Telefon",
+    "LOCATION": "Lokasjon",
+    "FORM": {
+      "NAME": "Navn",
+      "EMAIL": "E-post",
+      "SUBJECT": "Emne",
+      "MESSAGE": "Melding",
+      "SEND": "Send Melding"
+    }
+  }
+}
