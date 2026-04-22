@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
   langService = inject(LanguageService);
   destroyRef = inject(DestroyRef);
   selectedSection: WritableSignal<string> = signal('home');
+  isMenuOpen: WritableSignal<boolean> = signal(false);
 
   languageControl = new FormControl('En');
   availableLanguages = [
@@ -49,6 +50,11 @@ export class HeaderComponent implements OnInit {
       event.preventDefault();
     }
     this.selectedSection.set(section);
+    this.isMenuOpen.set(false);
     this.sectionSelected.emit(section);
+  }
+
+  toggleMenu() {
+    this.isMenuOpen.set(!this.isMenuOpen());
   }
 }

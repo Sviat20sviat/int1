@@ -8,7 +8,7 @@
         <span class="logo-bracket">/&gt;</span>
       </div>
     </div>
-    <div class="nav-menu" id="navMenu">
+    <div class="nav-menu" id="navMenu" [class.open]="isMenuOpen()">
       <a href="#home" class="nav-link" [class.selected]="selectedSection() === 'home'"
         (click)="selectSection('home', $event)">
         <i class="fas fa-home"></i>
@@ -77,6 +77,12 @@
       </div>
       <app-custom-select [options]="availableLanguages" [formControl]="languageControl" placeholder="Language">
       </app-custom-select>
+      
+      <button class="menu-toggle" [class.active]="isMenuOpen()" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </div>
 </header>
