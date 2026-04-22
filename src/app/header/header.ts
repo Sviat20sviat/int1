@@ -1,4 +1,4 @@
-import { Component, inject, signal, WritableSignal } from '@angular/core';
+import { Component, inject, signal, WritableSignal, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../theme.service';
 
@@ -13,7 +13,13 @@ export class HeaderComponent {
   themeService = inject(ThemeService);
   selectedSection: WritableSignal<string> = signal('home');
 
-  selectSection(section: string) {
+  @Output() sectionSelected = new EventEmitter<string>();
+
+  selectSection(section: string, event?: Event) {
+    if (event) {
+      event.preventDefault();
+    }
     this.selectedSection.set(section);
+    this.sectionSelected.emit(section);
   }
 }

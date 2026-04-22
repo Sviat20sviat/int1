@@ -12,14 +12,14 @@
         --bg-planet-shadow: #828894;
         --bg-planet-lightshadow: #D7D7D820;
         --dot-size: 0.25rem;
-        --primary: #c084fc;
+        --primary: #8b5cf6;
         --font-code: 'Fira Code',
         monospace;
-        --purple: #a78bfa;
-        --gradient-1: linear-gradient(135deg, #c084fc 0%, #a78bfa 50%, #67e8f9 100%);
-        --text-primary: #f1f5f9;
-        --text-secondary: #cbd5e1;
-        --text-muted: #94a3b8;
+        --purple: #a855f7;
+        --gradient-1: linear-gradient(135deg, var(--primary) 0%, var(--purple) 50%, #06b6d4 100%);
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
     }
 
 

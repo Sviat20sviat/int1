@@ -1,6 +1,8 @@
 @import 'reset';
 @import 'theme';
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
 
 @theme {
   --font-sans: "Roboto", sans-serif;

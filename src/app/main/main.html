@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header class="sticky-header" (sectionSelected)="scrollToSection($event)"></app-header>
 <canvas #bgCanvas class="bg-canvas"></canvas>
 <div class="main-content">
     <section id="home" class="hero-section">
@@ -10,7 +10,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-greeting">
-                    <span class="greeting-text" data-text-en="Hello, I'm">Hello, I'm</span>
+                    <span class="greeting-text">Hello, I'm</span>
                     <span class="greeting-cursor">|</span>
                 </div>
 
@@ -23,22 +23,20 @@
 
                 <div class="hero-title">
                     <span class="title-prefix">//</span>
-                    <span class="title-text" data-text-en="Full Stack Developer & UI/UX Designer">Full Stack Developer &
-                        UI/UX Designer</span>
+                    <span class="title-text">Full Stack Developer</span>
                 </div>
 
-                <p class="hero-description"
-                    data-text-en="Passionate developer creating exceptional digital experiences with modern technologies.">
+                <p class="hero-description">
                     Passionate developer creating exceptional digital experiences with modern technologies.
                 </p>
 
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
-                        <span data-text-en="Get In Touch">Get In Touch</span>
+                        <span>Get In Touch</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                     <a href="#projects" class="btn btn-secondary">
-                        <span data-text-en="View Projects">View Projects</span>
+                        <span>View Projects</span>
                         <i class="fas fa-code"></i>
                     </a>
                 </div>
@@ -75,15 +73,15 @@
                     <div class="floating-badge badge-1">
                         <i class="fab fa-react"></i>
                         <div class="badge-content">
-                            <span class="badge-title">React</span>
-                            <span class="badge-libs">Redux, Router, Hooks</span>
+                            <span class="badge-title">Angular</span>
+                            <span class="badge-libs">RxJs, SPA, Hooks</span>
                         </div>
                     </div>
                     <div class="floating-badge badge-2">
                         <i class="fab fa-node-js"></i>
                         <div class="badge-content">
                             <span class="badge-title">Node.js</span>
-                            <span class="badge-libs">Express, Socket.io, MongoDB</span>
+                            <span class="badge-libs">NestJs, Socket.io, PostgreSQL</span>
                         </div>
                     </div>
                     <div class="floating-badge badge-3">
@@ -101,7 +99,7 @@
             <div class="scroll-mouse">
                 <div class="scroll-wheel"></div>
             </div>
-            <span class="scroll-text" data-text-en="Scroll Down">Scroll Down</span>
+            <span class="scroll-text">Scroll Down</span>
         </div>
     </section>
 
@@ -111,7 +109,7 @@
                 <span class="section-number">01</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text" data-text-en="About Me">About Me</span>
+                    <span class="title-text">About Me</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -120,27 +118,27 @@
             <div class="about-content">
                 <div class="about-text-wrapper">
                     <div class="about-intro">
-                        <p class="about-text"
-                            data-text-en="I'm a passionate Full Stack Developer with over 5 years of experience in building modern web applications and mobile solutions. I specialize in JavaScript technologies, React, Node.js, and creating beautiful user interfaces.">
-                            I'm a passionate Full Stack Developer with over 5 years of experience in building modern web
-                            applications and mobile solutions. I specialize in JavaScript technologies, React, Node.js,
+                        <p class="about-text">
+                            I'm a Full Stack Developer with over 5 years of experience in building modern web
+                            applications and mobile solutions. I specialize in JavaScript technologies, Angualr,
+                            Node.js,
                             and creating beautiful user interfaces.
                         </p>
                     </div>
 
                     <div class="about-stats">
                         <div class="stat-item">
-                            <div class="stat-number" data-count="50">0</div>
-                            <div class="stat-label" data-text-en="Projects">Projects</div>
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Projects</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-count="5">0</div>
-                            <div class="stat-label" data-text-en="Years Experience">Years
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Years
                                 Experience</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number" data-count="30">0</div>
-                            <div class="stat-label" data-text-en="Happy Clients">Happy Clients
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Happy Clients
                             </div>
                         </div>
                     </div>
@@ -165,7 +163,7 @@
                                 <span class="code-property">skills</span>
                                 <span class="code-operator">:</span>
                                 <span class="code-bracket">[</span>
-                                <span class="code-string">'React'</span>
+                                <span class="code-string">'Angular'</span>
                                 <span class="code-comma">,</span>
                                 <span class="code-string">'Node.js'</span>
                                 <span class="code-comma">,</span>
@@ -195,7 +193,7 @@
                 <span class="section-number">02</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text" data-text-en="Skills">Skills</span>
+                    <span class="title-text">Skills</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -203,127 +201,127 @@
 
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="category-title" data-text-en="Frontend">Frontend</h3>
+                    <h3 class="category-title">Frontend</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-skill="React" data-percent="95">
+                        <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">React</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-name">Angular</span>
+                                <span class="skill-percent">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'95%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Vue.js" data-percent="85">
+                        <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Vue.js</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percent">70%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'70%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="TypeScript" data-percent="90">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">TypeScript</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'95%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Next.js" data-percent="88">
+                        <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Next.js</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'95%'"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title" data-text-en="Backend">Backend</h3>
+                    <h3 class="category-title">Backend</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-skill="Node.js" data-percent="92">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Node.js</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'85%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Express" data-percent="90">
+                        <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Express</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-name">NestJs</span>
+                                <span class="skill-percent">85%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'85%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="MongoDB" data-percent="85">
-                            <div class="skill-header">
-                                <span class="skill-name">MongoDB</span>
-                                <span class="skill-percent">0%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-skill="PostgreSQL" data-percent="80">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">PostgreSQL</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'90%'"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Microservices</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" [style.width]="'85%'"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3 class="category-title" data-text-en="Tools & Others">Tools &
+                    <h3 class="category-title">Tools &
                         Others</h3>
                     <div class="skill-items">
-                        <div class="skill-item" data-skill="Git" data-percent="95">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Git</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'95%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Docker" data-percent="75">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Docker</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'80%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="AWS" data-percent="70">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">AWS</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">80%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'80%'"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-skill="Figma" data-percent="88">
+                        <div class="skill-item">
                             <div class="skill-header">
                                 <span class="skill-name">Figma</span>
-                                <span class="skill-percent">0%</span>
+                                <span class="skill-percent">90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress"></div>
+                                <div class="skill-progress" [style.width]="'90%'"></div>
                             </div>
                         </div>
                     </div>
@@ -338,7 +336,7 @@
                 <span class="section-number">03</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text" data-text-en="Experience">Experience</span>
+                    <span class="title-text">Experience</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -349,81 +347,119 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <div class="timeline-year">2022 - Present</div>
+                            <div class="timeline-year">2021 - 2025</div>
                             <div class="timeline-badge">Current</div>
                         </div>
-                        <h3 class="timeline-title" data-text-en="Senior Full Stack Developer">Senior Full Stack
+                        <h3 class="timeline-title">Middle Full Stack
                             Developer</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Tech Company Inc.
+                            Tello Technologies
                         </div>
-                        <p class="timeline-description"
-                            data-text-en="Leading a team of developers in building complex web applications using React and Node.js. Developing advanced user interfaces and optimizing performance. Implementing microservices architecture and CI/CD pipelines.">
-                            Leading a team of developers in building complex web applications using React and Node.js.
-                            Developing advanced user interfaces and optimizing performance. Implementing microservices
-                            architecture and CI/CD pipelines.
+                        <p class="timeline-description">
+                            Deveping dashboard for the huge Push-to-Talk SaaS product
+                            using Angular 8-19,
+                            Material, eCharts, Google Maps, state managment,
+                            websocket realtime updating, own realtime chat,
+                            own realtime voice-video messaging.
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Led team of 5 developers">Led
-                                    team of 5 developers</span>
+                                <span>Led team of frontend developers</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Improved performance by 40%">Improved performance by 40%</span>
+                                <span>Improved performance by 60%</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Deployed 20+ production apps">Deployed 20+ production apps</span>
+                                <span>Build stable and scalable architecture</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">RxJs</span>
                             <span class="tag">TypeScript</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">AWS</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">State Management</span>
+                            <span class="tag">Angular Materials</span>
                         </div>
                     </div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <div class="timeline-year">2020 - 2022</div>
+                            <div class="timeline-year">2024 - 2025</div>
                         </div>
-                        <h3 class="timeline-title" data-text-en="Frontend Developer">
-                            Frontend Developer</h3>
+                        <h3 class="timeline-title">
+                            Senior Frontend Developer - Middle Backend Developer</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Digital Solutions
+                            Transport Logistic Company
                         </div>
-                        <p class="timeline-description"
-                            data-text-en="Developed interactive user interfaces using React and Vue.js. Worked on improving user experience and performance optimization. Collaborated with designers to implement pixel-perfect designs.">
-                            Developed interactive user interfaces using React and Vue.js. Worked on improving user
-                            experience and performance optimization. Collaborated with designers to implement
-                            pixel-perfect designs.
+                        <p class="timeline-description">
+                            Transport Logistic Company app development.
+                            SaaS-startup with client and admin sides, management
+                            of drivers, vehicles, orders, routes, payments, notifications,
+                            reports, analytics, etc.
+
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Built 15+ responsive websites">Built 15+ responsive websites</span>
+                                <span>Developed frontend and backend sides</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Reduced load time by 50%">Reduced load time by 50%</span>
+                                <span>Reduced load time by 50%</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">SASS</span>
-                            <span class="tag">Webpack</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">RxJs</span>
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">NestJs</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-year">2022 - 2024</div>
+                        </div>
+                        <h3 class="timeline-title">
+                            Middle Frontend Developer</h3>
+                        <div class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            ePattern Digital
+                        </div>
+                        <p class="timeline-description">
+                            Oil calculation tool. Processing of many drills and
+                            year of oil pumping. Angular 15-17, plotlyJs charts.
+                            Multicharts, saving presets to local file\ server, load
+                            from local doc calculation, comprasion.
+
+                        </p>
+                        <div class="timeline-achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Improove optimization</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Reduced load time by 50%</span>
+                            </div>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Plotly.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">PrimeNG</span>
+                            <span class="tag">RxJs</span>
                         </div>
                     </div>
                 </div>
@@ -432,36 +468,35 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <div class="timeline-year">2018 - 2020</div>
+                            <div class="timeline-year">2021 - 2022</div>
                         </div>
-                        <h3 class="timeline-title" data-text-en="Junior Developer">Junior
+                        <h3 class="timeline-title">Junior
                             Developer</h3>
                         <div class="timeline-company">
                             <i class="fas fa-building"></i>
-                            Creative Studio
+                            Yoga Marga app
                         </div>
-                        <p class="timeline-description"
-                            data-text-en="Developed websites using HTML, CSS, and JavaScript. Learned best practices in web development. Worked on various client projects and gained experience in modern web technologies.">
-                            Developed websites using HTML, CSS, and JavaScript. Learned best practices in web
-                            development. Worked on various client projects and gained experience in modern web
-                            technologies.
+                        <p class="timeline-description">
+                            Fullstack PWA SPA Practices and exersices
+                            desktop/mobile app on Angular 12 and Firebase.
+                            Registration\autorization with Firebase
                         </p>
                         <div class="timeline-achievements">
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Completed 30+ projects">Completed 30+ projects</span>
+                                <span>Building mobile adaptive and offline-usable PWA app</span>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-check-circle"></i>
-                                <span data-text-en="Learned modern frameworks">Learned modern frameworks</span>
+                                <span>Learned modern frameworks</span>
                             </div>
                         </div>
                         <div class="timeline-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">jQuery</span>
-                            <span class="tag">Bootstrap</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">Google Firebase</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">RxJs</span>
+                            <span class="tag">PWA</span>
                         </div>
                     </div>
                 </div>
@@ -475,7 +510,7 @@
                 <span class="section-number">04</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text" data-text-en="Projects">Projects</span>
+                    <span class="title-text">Projects</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -499,9 +534,8 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-text-en="E-Commerce Platform">E-Commerce Platform</h3>
-                        <p class="project-description"
-                            data-text-en="A complete e-commerce platform with payment integration and advanced inventory management.">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
                             A complete e-commerce platform with payment integration and advanced inventory management.
                         </p>
                         <div class="project-tags">
@@ -529,10 +563,9 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-text-en="Task Management App">
+                        <h3 class="project-title">
                             Task Management App</h3>
-                        <p class="project-description"
-                            data-text-en="A web application for task management with real-time synchronization and modern design.">
+                        <p class="project-description">
                             A web application for task management with real-time synchronization and modern design.
                         </p>
                         <div class="project-tags">
@@ -560,10 +593,9 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title" data-text-en="Blog Platform">Blog Platform
+                        <h3 class="project-title">Blog Platform
                         </h3>
-                        <p class="project-description"
-                            data-text-en="A modern blog platform with CMS features and beautiful UI design.">
+                        <p class="project-description">
                             A modern blog platform with CMS features and beautiful UI design.
                         </p>
                         <div class="project-tags">
@@ -583,7 +615,7 @@
                 <span class="section-number">05</span>
                 <h2 class="section-title">
                     <span class="title-bracket">&lt;</span>
-                    <span class="title-text" data-text-en="Contact">Contact</span>
+                    <span class="title-text">Contact</span>
                     <span class="title-bracket">/&gt;</span>
                 </h2>
                 <div class="section-line"></div>
@@ -596,8 +628,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label" data-text-en="Email">Email</h4>
-                            <a href="mailto:developer@example.com" class="contact-value">developer@example.com</a>
+                            <h4 class="contact-label">Email</h4>
+                            <a href="mailto:sdvorskij8@gmail.com" class="contact-value">sdvorskij8@gmail.com</a>
                         </div>
                     </div>
 
@@ -606,8 +638,8 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label" data-text-en="Phone">Phone</h4>
-                            <a href="tel:+966501234567" class="contact-value">+966 50 123 4567</a>
+                            <h4 class="contact-label">Phone</h4>
+                            <a href="tel:+966501234567" class="contact-value">+47 405-830-57</a>
                         </div>
                     </div>
 
@@ -616,29 +648,27 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <h4 class="contact-label" data-text-en="Location">Location</h4>
-                            <span class="contact-value" data-text-en="Riyadh, Saudi Arabia">Riyadh, Saudi Arabia</span>
+                            <h4 class="contact-label">Location</h4>
+                            <span class="contact-value">Øygarden, Norway</span>
                         </div>
                     </div>
                 </div>
 
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Name" data-placeholder-en="Name" required>
+                        <input type="text" class="form-input" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-input" placeholder="Email" data-placeholder-en="Email" required>
+                        <input type="email" class="form-input" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Subject" data-placeholder-en="Subject"
-                            required>
+                        <input type="text" class="form-input" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-input form-textarea" rows="5" placeholder="Message"
-                            data-placeholder-en="Message" required></textarea>
+                        <textarea class="form-input form-textarea" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit">
-                        <span data-text-en="Send Message">Send Message</span>
+                        <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>

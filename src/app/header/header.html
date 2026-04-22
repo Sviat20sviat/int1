@@ -9,33 +9,32 @@
       </div>
     </div>
     <div class="nav-menu" id="navMenu">
-      <a href="#home" class="nav-link" data-section="home" [class.selected]="selectedSection() === 'home'"
-        (click)="selectSection('home')">
+      <a href="#home" class="nav-link" [class.selected]="selectedSection() === 'home'" (click)="selectSection('home', $event)">
         <i class="fas fa-home"></i>
         <span class="nav-text">Home</span>
       </a>
-      <a href="#about" class="nav-link" data-section="about" [class.selected]="selectedSection() === 'about'"
-        (click)="selectSection('about')">
+      <a href="#about" class="nav-link" [class.selected]="selectedSection() === 'about'"
+        (click)="selectSection('about', $event)">
         <i class="fas fa-user"></i>
         <span class="nav-text">About</span>
       </a>
-      <a href="#skills" class="nav-link" data-section="skills" [class.selected]="selectedSection() === 'skills'"
-        (click)="selectSection('skills')">
+      <a href="#skills" class="nav-link" [class.selected]="selectedSection() === 'skills'"
+        (click)="selectSection('skills', $event)">
         <i class="fas fa-code"></i>
         <span class="nav-text">Skills</span>
       </a>
-      <a href="#experience" class="nav-link" data-section="experience"
-        [class.selected]="selectedSection() === 'experience'" (click)="selectSection('experience')">
+      <a href="#experience" class="nav-link" [class.selected]="selectedSection() === 'experience'"
+        (click)="selectSection('experience', $event)">
         <i class="fas fa-briefcase"></i>
         <span class="nav-text">Experience</span>
       </a>
-      <a href="#projects" class="nav-link" data-section="projects" [class.selected]="selectedSection() === 'projects'"
-        (click)="selectSection('projects')">
+      <a href="#projects" class="nav-link" [class.selected]="selectedSection() === 'projects'"
+        (click)="selectSection('projects', $event)">
         <i class="fas fa-rocket"></i>
         <span class="nav-text">Projects</span>
       </a>
-      <a href="#contact" class="nav-link" data-section="contact" [class.selected]="selectedSection() === 'contact'"
-        (click)="selectSection('contact')">
+      <a href="#contact" class="nav-link" [class.selected]="selectedSection() === 'contact'"
+        (click)="selectSection('contact', $event)">
         <i class="fas fa-envelope"></i>
         <span class="nav-text">Contact</span>
       </a>

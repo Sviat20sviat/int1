@@ -30,6 +30,15 @@ export class Main implements AfterViewInit, OnDestroy {
     }
   }
 
+  scrollToSection(sectionId: string) {
+    if (this.isBrowser) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
   ngOnDestroy() {
     this.canvasAnimation.destroy();
   }
