@@ -9,9 +9,34 @@ export class LanguageService {
   public readonly currentLanguage = computed(() => this.currentLangSignal());
 
   constructor(private translateService: TranslateService) {
-    const savedLang = localStorage.getItem('appLang') || 'en';
     this.translateService.setDefaultLang('en');
-    this.setLanguage(savedLang);
+
+    const savedLang = localStorage.getItem('appLang');
+    if (savedLang) {
+      this.setLanguage(savedLang);
+    } else {
+      this.setLanguage(this.getBrowserLanguage());
+    }
+  }
+
+  private getBrowserLanguage(): string {
+    if (typeof navigator === 'undefined') return 'en';
+
+    // navigator.language format is mostly 'en-US', 'ru-RU', 'uk', etc.
+    const lang = navigator.language.toLowerCase();
+    console.log('lang', lang);
+
+    if (lang.startsWith('ru') || lang.startsWith('be') || lang.startsWith('kk')) {
+      return 'en';
+    }
+    if (lang.startsWith('uk')) {
+      return 'ua';
+    }
+    if (lang.startsWith('no') || lang.startsWith('nb') || lang.startsWith('nn')) {
+      return 'no';
+    }
+
+    return 'en';
   }
 
   setLanguage(lang: string) {
@@ -26,7 +51,7 @@ export class LanguageService {
       'ru': 'ru',
       'ua': 'ua'
     };
-    
+
     const code = langMap[lang] || 'en';
     this.translateService.use(code);
     this.currentLangSignal.set(code);

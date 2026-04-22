@@ -23,10 +23,10 @@ export class HeaderComponent implements OnInit {
 
   languageControl = new FormControl('En');
   availableLanguages = [
-    { name: 'Englsh', id: 'En' },
-    { name: 'Norwegian Bokmal', id: 'No' },
-    { name: 'Russian', id: 'Ru' },
-    { name: 'Ukrainian', id: 'Ua' },
+    { name: 'English', id: 'En' },
+    { name: 'Norsk Bokmål', id: 'No' },
+    { name: 'Русский', id: 'Ru' },
+    { name: 'Українська', id: 'Ua' },
   ];
 
   @Output() sectionSelected = new EventEmitter<string>();
