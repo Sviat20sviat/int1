@@ -85,7 +85,7 @@ export class CanvasAnimationService {
 
     // Clear canvas with solid color
     this.ctx.shadowBlur = 0;
-    this.ctx.fillStyle = this.isDarkModeFn() ? '#080808ff' : '#ebebebff';
+    this.ctx.fillStyle = this.isDarkModeFn() ? '#080808ff' : '#c0eef0ff';
     this.ctx.fillRect(0, 0, this.width, this.height);
 
     const mouseX = this.mouse.x;
